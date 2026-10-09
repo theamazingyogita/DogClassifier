@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0EB90DD13078F1F100A89F3E /* DogBreedClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0EB90DD03078F1A100A89F3E /* DogBreedClassifier.mlmodel */; };
+		0EB90DD2307903F600A89F3E /* ClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB90DCD3078ED4D00A89F3E /* ClassifierViewModel.swift */; };
+		0EB90DD3307903FB00A89F3E /* Prediction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB90DCB3078ED1D00A89F3E /* Prediction.swift */; };
+		0EB90DD43079040800A89F3E /* CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB90DCF3078ED6800A89F3E /* CameraPicker.swift */; };
+		0EB90DD530790D4F00A89F3E /* DogClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB90DCC3078ED3D00A89F3E /* DogClassifier.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0E7E75EC3078A20100BD4ADD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +35,12 @@
 		0E7E75DE3078A1FD00BD4ADD /* DogClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7E75EB3078A20100BD4ADD /* DogClassifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogClassifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E7E75F53078A20100BD4ADD /* DogClassifierUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogClassifierUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EB90DCB3078ED1D00A89F3E /* Prediction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prediction.swift; sourceTree = "<group>"; };
+		0EB90DCC3078ED3D00A89F3E /* DogClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogClassifier.swift; sourceTree = "<group>"; };
+		0EB90DCD3078ED4D00A89F3E /* ClassifierViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassifierViewModel.swift; sourceTree = "<group>"; };
+		0EB90DCE3078ED5B00A89F3E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0EB90DCF3078ED6800A89F3E /* CameraPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPicker.swift; sourceTree = "<group>"; };
+		0EB90DD03078F1A100A89F3E /* DogBreedClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DogBreedClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -99,6 +113,8 @@
 		0E7E76083078A25100BD4ADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0EB90DCB3078ED1D00A89F3E /* Prediction.swift */,
+				0EB90DD03078F1A100A89F3E /* DogBreedClassifier.mlmodel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -106,6 +122,7 @@
 		0E7E76093078A25D00BD4ADD /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0EB90DCC3078ED3D00A89F3E /* DogClassifier.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -113,6 +130,7 @@
 		0E7E760A3078A26400BD4ADD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0EB90DCD3078ED4D00A89F3E /* ClassifierViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -120,6 +138,8 @@
 		0E7E760B3078A27500BD4ADD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0EB90DCF3078ED6800A89F3E /* CameraPicker.swift */,
+				0EB90DCE3078ED5B00A89F3E /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -268,6 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB90DD13078F1F100A89F3E /* DogBreedClassifier.mlmodel in Sources */,
+				0EB90DD530790D4F00A89F3E /* DogClassifier.swift in Sources */,
+				0EB90DD2307903F600A89F3E /* ClassifierViewModel.swift in Sources */,
+				0EB90DD3307903FB00A89F3E /* Prediction.swift in Sources */,
+				0EB90DD43079040800A89F3E /* CameraPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +455,7 @@
 				DEVELOPMENT_TEAM = A896RQ5V58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take a photo of a dog to identify its breed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -463,6 +489,7 @@
 				DEVELOPMENT_TEAM = A896RQ5V58;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Take a photo of a dog to identify its breed.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
